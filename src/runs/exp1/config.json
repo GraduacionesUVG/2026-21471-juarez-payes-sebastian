@@ -1,0 +1,49 @@
+{
+  "data": "fakeV2",
+  "real_dir": "real",
+  "fake_dir": "fake-v2",
+  "out": "runs/exp1",
+  "val_frac": 0.1,
+  "test_frac": 0.1,
+  "seed": 42,
+  "resize": 256,
+  "crop": 224,
+  "jpeg_p": 0.6,
+  "jpeg_q": [
+    30,
+    95
+  ],
+  "blur_p": 0.3,
+  "blur_sigma": [
+    0.0,
+    2.0
+  ],
+  "eval_jpeg": 90,
+  "backbone": "resnet50",
+  "pretrained": true,
+  "dropout": 0.3,
+  "epochs": 12,
+  "head_epochs": 2,
+  "batch_size": 32,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.1,
+  "weight_decay": 0.05,
+  "warmup_epochs": 0.5,
+  "label_smoothing": 0.02,
+  "grad_clip": 1.0,
+  "samples_per_epoch": 0,
+  "patience": 4,
+  "num_workers": 4,
+  "amp": true,
+  "device": "auto",
+  "cam_layers": [
+    "layer3",
+    "layer4"
+  ],
+  "cam_target": "predicted",
+  "infer_size": 224,
+  "occ_patch": 32,
+  "occ_stride": 16,
+  "display_size": "",
+  "display_fit": "fill"
+}

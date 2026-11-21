@@ -1,0 +1,31 @@
+# Variables de entorno
+.env
+src/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Conjunto de datos y estímulos (no se distribuyen en el repositorio)
+src/fakeV2/
+src/Estimulos_Generados_IA/
+
+# Salidas generadas al ejecutar el modelo (se conservan los pesos y la configuración)
+src/runs/*
+!src/runs/exp1/
+src/runs/exp1/*
+!src/runs/exp1/best.pt
+!src/runs/exp1/config.json
+
+# Sistema operativo e IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporales
+*.tmp
+*.log
